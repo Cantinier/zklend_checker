@@ -21,7 +21,7 @@ def req_api(address, proxy):
         return None
 
 
-def req_api_http(address, proxy, max_retries=3, retry_delay=1):
+def req_api_http(address, proxy, max_retries=10, retry_delay=1):
     print(address)
     url = main_url + address
     proxies = None
